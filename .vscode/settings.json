@@ -2,7 +2,7 @@
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
-    "package.json": "pnpm-lock.yaml, package-lock.json, yarn.lock",
+    "package.json": "pnpm-lock.yaml, package-lock.json, yarn.lock, tailwind.config.mjs, astro.config.mjs, .eslintrc.*",
     ".prettierrc.mjs": ".prettierignore",
     "README.md": "CONTRIBUTING.md"
   },
@@ -30,6 +30,5 @@
   "[astro]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "prettier.documentSelectors": ["**/*.astro"],
-  "prettier.prettierPath": "./packages/compiler/node_modules/prettier/index.cjs"
+  "prettier.documentSelectors": ["**/*.astro"]
 }
