@@ -14,7 +14,7 @@ const { data } = Astro.props;
 
 <section id="hero-section" class="flex justify-center mt-48">
   <div class="md:w-1/2">
-    <h1 class="text-3xl text-center font-semibold md:text-6xl">
+    <h1 class="text-4xl text-center font-semibold md:text-6xl">
       {data.title}
       <span class="text-blue-700"> {data.highlightedTitle} </span>
     </h1>
@@ -23,14 +23,14 @@ const { data } = Astro.props;
     </h2>
     <div class="flex justify-evenly mt-10">
       <a
-        class="px-6 py-2 rounded-lg text-center text-white font-semibold bg-black hover:scale-110 hover:opacity-85 transition inline-block"
+        class="px-3 py-1 text-sm md:text-base md:px-6 md:py-2 rounded-lg text-center text-white font-semibold bg-black hover:scale-110 hover:opacity-85 transition inline-block"
         href="https://github.com/JimmyCamus/luna-landing"
         target="_blank"
       >
         {data.primaryCta}
       </a>
       <a
-        class="px-6 py-2 rounded-lg text-center border border-black font-semibold hover:scale-110 hover:opacity-85 transition inline-block"
+        class="px-3 py-1 text-sm md:text-base md:px-6 md:py-2 rounded-lg text-center border border-black font-semibold hover:scale-110 hover:opacity-85 transition inline-block"
         href="https://github.com/JimmyCamus/luna-landing"
         target="_blank"
       >
