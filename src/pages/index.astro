@@ -1,10 +1,13 @@
 ---
 import Hero from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
+import { getLandingData } from "../services/data.service";
+
+const data = await getLandingData();
 ---
 
-<Layout title="Luna Landing your perfect landing page">
+<Layout title={data.title}>
   <main class="w-3/4">
-    <Hero />
+    <Hero data={data.heroData} />
   </main>
 </Layout>
