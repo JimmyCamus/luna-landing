@@ -1,5 +1,6 @@
 ---
 import Hero from "../components/Header.astro";
+import Services from "../components/Services.astro";
 import Layout from "../layouts/Layout.astro";
 import { getLandingData } from "../services/data.service";
 
@@ -9,5 +10,6 @@ const data = await getLandingData();
 <Layout title={data.title}>
   <main class="w-3/4">
     <Hero data={data.heroData} />
+    <Services />
   </main>
 </Layout>
