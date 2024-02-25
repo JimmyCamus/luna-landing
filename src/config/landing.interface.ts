@@ -19,7 +19,7 @@ export interface ServicesData {
 
 export interface Service {
   title: string;
-  icon: Icon;
+  icon: string;
   description: string;
 }
 
