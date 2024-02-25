@@ -10,6 +10,6 @@ const data = await getLandingData();
 <Layout title={data.title}>
   <main class="w-3/4">
     <Hero data={data.heroData} />
-    <Services />
+    <Services data={data.servicesData} />
   </main>
 </Layout>

@@ -1,29 +1,35 @@
 ---
-import DevIcon from "../components/icons/DevIcon.astro";
+import Icon from "../components/icons/Icon.astro";
+import type { ServicesData } from "../libs/interfaces/landing.interface";
 
-const Icon = DevIcon;
+interface Props {
+  data: ServicesData;
+}
+
+const { data } = Astro.props;
 ---
 
-<section id="services-section" class="flex flex-col my-20 gap-y-14">
+<section id="services-section" class="flex flex-col mb-20 gap-y-28">
   <h2 class="text-2xl text-center font-bold md:text-5xl">
-    Everything you need
+    {data.title}
   </h2>
-  <div class="grid grid-cols-2 gap-y-10 justify-items-center">
-    <article class="flex gap-x-12 w-[550px]">
-      <div>
-        <Icon />
-      </div>
-      <section>
-        <h3 class="text-lg font-medium md:text-4xl mb-3">
-          Professional Templates
-        </h3>
-        <p class="text-pretty opacity-90 md:text-lg">
-          Our templates are crafted by experienced web designers, ensuring a
-          modern and polished look for your site. From typography to element
-          design, every detail is carefully considered to convey a professional
-          image.
-        </p>
-      </section>
-    </article>
+  <div class="grid md:grid-cols-2 gap-y-10 justify-items-center">
+    {
+      data.services.map((service) => (
+        <article class="flex gap-x-6 md:gap-x-12 md:w-[550px]">
+          <div>
+            <Icon icon={service.icon} />
+          </div>
+          <section>
+            <h3 class="text-xl font-medium md:text-4xl mb-3">
+              {service.title}
+            </h3>
+            <p class="text-pretty opacity-90 md:text-lg">
+              {service.description}
+            </p>
+          </section>
+        </article>
+      ))
+    }
   </div>
 </section>

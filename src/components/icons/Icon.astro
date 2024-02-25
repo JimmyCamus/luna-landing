@@ -1,0 +1,25 @@
+---
+import type { Icon } from "../../libs/interfaces/landing.interface";
+import ConfigIcon from "./ConfigIcon.astro";
+import DevIcon from "./DevIcon.astro";
+import FileIcon from "./FileIcon.astro";
+import PlanetIcon from "./PlanetIcon.astro";
+
+interface Props {
+  icon: Icon;
+}
+
+const { icon } = Astro.props;
+
+const icons = [ConfigIcon, DevIcon, FileIcon, PlanetIcon];
+
+let figures: Record<string, (_props: Record<string, unknown>) => unknown> = {};
+
+icons.map((item) => {
+  figures[item.name] = item;
+});
+
+const Figure = figures[icon];
+---
+
+{Figure ? <Figure /> : <p>Icon not found</p>}

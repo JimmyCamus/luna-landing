@@ -6,5 +6,30 @@
     "primaryCta": "Github Repo",
     "secondaryCta": "See our pricing",
     "highlightedTitle": "Luna Landing"
+  },
+  "servicesData": {
+    "title": "Everything you need",
+    "services": [
+      {
+        "title": "Professional Templates",
+        "icon": "DevIcon",
+        "description": "Our templates are crafted by experienced web designers, ensuring a modern and polished look for your site. From typography to element design, every detail is carefully considered to convey a professional image."
+      },
+      {
+        "title": "Integrated Accessibility",
+        "icon": "FileIcon",
+        "description": "We care about web accessibility and have integrated features to ensure your site is accessible to all users, including those with visual or motor disabilities. Our templates comply with WCAG accessibility standards to provide an inclusive experience for everyone."
+      },
+      {
+        "title": "SEO-Optimized",
+        "icon": "FileIcon",
+        "description": "We understand the importance of your site being visible in search engines. That's why our templates are optimized for SEO, meaning they are structured and coded to be easily indexed by Google and other search engines, helping to improve your ranking in search results."
+      },
+      {
+        "title": "Easy Set up",
+        "icon": "ConfigIcon",
+        "description": "With our templates, you don't need to be a web development expert to have an impressive site. They are easy to set up and customize, with intuitive options that allow you to change colors, fonts, page layout, and more with just a few clicks. Make your site stand out hassle-free!"
+      }
+    ]
   }
 }
