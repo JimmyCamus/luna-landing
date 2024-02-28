@@ -1,0 +1,23 @@
+---
+import type { AdventajesData } from "@/config/landing.interface";
+import SideBySide from "./SideBySide.astro";
+
+interface Props {
+  data: AdventajesData;
+}
+
+const { data } = Astro.props;
+---
+
+<section id="adventajes-section" class="flex flex-col mb-20 gap-y-28">
+  <h2 class="text-2xl text-center font-bold md:text-5xl">
+    {data.title}
+  </h2>
+  <div>
+    {
+      data.adventajes.map((adventaje, idx) => (
+        <SideBySide data={adventaje} reversed={(idx + 1) % 2 === 0} />
+      ))
+    }
+  </div>
+</section>

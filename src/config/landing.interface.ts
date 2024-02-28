@@ -2,6 +2,7 @@ export interface LandingPageData {
   title: string;
   heroData: HeroData;
   servicesData: ServicesData;
+  adventajesData: AdventajesData;
 }
 
 export interface HeroData {
@@ -23,4 +24,22 @@ export interface Service {
   description: string;
 }
 
-export type Icon = "DevIcon" | "FileIcon" | "PlanetIcon" | "ConfigIcon";
+export interface AdventajesData {
+  title: string;
+  adventajes: Adventaje[];
+}
+
+export interface Adventaje {
+  title: string;
+  description: string;
+  img: string;
+  imageAlt: string;
+  checks: string[];
+}
+
+export type Icon =
+  | "DevIcon"
+  | "FileIcon"
+  | "PlanetIcon"
+  | "ConfigIcon"
+  | "CheckIcon";
