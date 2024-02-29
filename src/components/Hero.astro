@@ -16,7 +16,7 @@ const { data } = Astro.props;
   <div class="md:w-1/2">
     <h1 class="text-4xl text-center font-semibold md:text-6xl">
       {data.title}
-      <span class="text-blue-700"> {data.highlightedTitle} </span>
+      <span class="text-primary"> {data.highlightedTitle} </span>
     </h1>
     <h2 class="mt-10 text-lg text-center opacity-80 md:text-2xl">
       {data.subTitle}
@@ -39,7 +39,7 @@ const { data } = Astro.props;
     </div>
     <div class="flex justify-center">
       <a
-        class="flex justify-center items-center animate-bounce border-2 border-transparent bg-blue-700 text-white rounded-full w-14 h-14 mt-32 hover:bg-white hover:text-blue-700 hover:border-blue-700 transition"
+        class="flex justify-center items-center animate-bounce border-2 border-transparent bg-primary text-white rounded-full w-14 h-14 mt-32 hover:bg-white hover:text-primary hover:border-primary transition"
         href="#services-section"
       >
         <svg
