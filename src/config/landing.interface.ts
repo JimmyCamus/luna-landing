@@ -3,6 +3,7 @@ export interface LandingPageData {
   heroData: HeroData;
   servicesData: ServicesData;
   adventajesData: AdventajesData;
+  footerData: FooterData;
 }
 
 export interface HeroData {
@@ -37,9 +38,30 @@ export interface Adventaje {
   checks: string[];
 }
 
+export interface FooterData {
+  logo: string;
+  description: string;
+  links: Link[];
+  socials: Social[];
+}
+
+export interface Link {
+  label: string;
+  href: string;
+}
+
+export interface Social {
+  icon: string;
+  href: string;
+}
+
 export type Icon =
   | "DevIcon"
   | "FileIcon"
   | "PlanetIcon"
   | "ConfigIcon"
-  | "CheckIcon";
+  | "CheckIcon"
+  | "InstagramIcon"
+  | "GithubIcon"
+  | "TwitterIcon"
+  | "FacebookIcon";

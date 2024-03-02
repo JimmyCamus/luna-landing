@@ -3,8 +3,12 @@ import type { Icon } from "@/config/landing.interface";
 import CheckIcon from "@/icons/CheckIcon.astro";
 import ConfigIcon from "@/icons/ConfigIcon.astro";
 import DevIcon from "@/icons/DevIcon.astro";
+import FacebookIcon from "@/icons/FacebookIcon.astro";
 import FileIcon from "@/icons/FileIcon.astro";
+import GithubIcon from "@/icons/GithubIcon.astro";
+import InstagramIcon from "@/icons/InstagramIcon.astro";
 import PlanetIcon from "@/icons/PlanetIcon.astro";
+import TwitterIcon from "@/icons/TwitterIcon.astro";
 
 interface Props {
   icon: Icon;
@@ -12,7 +16,17 @@ interface Props {
 
 const { icon } = Astro.props;
 
-const icons = [ConfigIcon, DevIcon, FileIcon, PlanetIcon, CheckIcon];
+const icons = [
+  ConfigIcon,
+  DevIcon,
+  FileIcon,
+  PlanetIcon,
+  CheckIcon,
+  FacebookIcon,
+  GithubIcon,
+  InstagramIcon,
+  TwitterIcon,
+];
 
 let figures: Record<string, (_props: Record<string, unknown>) => unknown> = {};
 

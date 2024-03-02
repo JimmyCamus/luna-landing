@@ -50,5 +50,22 @@
         "checks": ["Search Visibility", "Organic Traffic", "Online Credibility"]
       }
     ]
+  },
+  "footerData": {
+    "logo": "Luna Landing",
+    "description": "Discover the Beauty of the Cosmos: Explore the Infinite Wonders of Space with Us",
+    "links": [
+      { "label": "About", "href": "/" },
+      { "label": "Services", "href": "/" },
+      { "label": "Blog", "href": "/" },
+      { "label": "FAQs", "href": "/" },
+      { "label": "Contact", "href": "/" }
+    ],
+    "socials": [
+      { "icon": "FacebookIcon", "href": "/" },
+      { "icon": "InstagramIcon", "href": "/" },
+      { "icon": "TwitterIcon", "href": "/" },
+      { "icon": "GithubIcon", "href": "/" }
+    ]
   }
 }

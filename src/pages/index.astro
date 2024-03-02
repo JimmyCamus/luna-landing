@@ -1,5 +1,6 @@
 ---
 import Adventajes from "@/components/Adventajes.astro";
+import Footer from "@/components/Footer.astro";
 import Hero from "@/components/Hero.astro";
 import Services from "@/components/Services.astro";
 import Layout from "@/layouts/Layout.astro";
@@ -9,9 +10,12 @@ const data = await getLandingData();
 ---
 
 <Layout title={data.title}>
-  <main class="w-3/4">
-    <Hero data={data.heroData} />
-    <Services data={data.servicesData} />
-    <Adventajes data={data.adventajesData} />
+  <main class="flex flex-col justify-center items-center">
+    <div class="w-3/4">
+      <Hero data={data.heroData} />
+      <Services data={data.servicesData} />
+      <Adventajes data={data.adventajesData} />
+    </div>
+    <Footer data={data.footerData} />
   </main>
 </Layout>
