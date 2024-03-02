@@ -5,6 +5,7 @@ import Hero from "@/components/Hero.astro";
 import Services from "@/components/Services.astro";
 import Layout from "@/layouts/Layout.astro";
 import { getLandingData } from "@/services/data.service";
+import Brands from "../components/Brands.astro";
 
 const data = await getLandingData();
 ---
@@ -15,6 +16,7 @@ const data = await getLandingData();
       <Hero data={data.heroData} />
       <Services data={data.servicesData} />
       <Adventajes data={data.adventajesData} />
+      <Brands data={data.brandsData} />
     </div>
     <Footer data={data.footerData} />
   </main>

@@ -51,6 +51,34 @@
       }
     ]
   },
+  "brandsData": {
+    "title": "Integration with Leading Technologies",
+    "description": "Effortlessly integrate with leading technologies. Our platform seamlessly supports industry-standard tools and frameworks, enabling you to stay ahead of the curve and maximize productivity. Explore endless possibilities with our comprehensive compatibility features",
+    "brands": [
+      { "label": "React", "icon": "ReactIcon", "href": "https://react.dev/" },
+      { "label": "Vue", "icon": "VueIcon", "href": "https://vuejs.org/" },
+      {
+        "label": "Svelte",
+        "icon": "SvelteIcon",
+        "href": "https://svelte.dev/"
+      },
+      {
+        "label": "Solid",
+        "icon": "SolidIcon",
+        "href": "https://www.solidjs.com/"
+      },
+      {
+        "label": "Vercel",
+        "icon": "VercelIcon",
+        "href": "https://vercel.com/"
+      },
+      {
+        "label": "Netlify",
+        "icon": "NetlifyIcon",
+        "href": "https://www.netlify.com/"
+      }
+    ]
+  },
   "footerData": {
     "logo": "Luna Landing",
     "description": "Discover the Beauty of the Cosmos: Explore the Infinite Wonders of Space with Us",

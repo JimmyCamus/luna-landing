@@ -3,6 +3,7 @@ export interface LandingPageData {
   heroData: HeroData;
   servicesData: ServicesData;
   adventajesData: AdventajesData;
+  brandsData: BrandsData;
   footerData: FooterData;
 }
 
@@ -55,6 +56,18 @@ export interface Social {
   href: string;
 }
 
+export interface BrandsData {
+  title: string;
+  description: string;
+  brands: Brand[];
+}
+
+export interface Brand {
+  label: string;
+  icon: string;
+  href: string;
+}
+
 export type Icon =
   | "DevIcon"
   | "FileIcon"
@@ -64,4 +77,10 @@ export type Icon =
   | "InstagramIcon"
   | "GithubIcon"
   | "TwitterIcon"
-  | "FacebookIcon";
+  | "FacebookIcon"
+  | "ReactIcon"
+  | "SvelteIcon"
+  | "SolidIcon"
+  | "VueIcon"
+  | "VercelIcon"
+  | "NetlifyIcon";
