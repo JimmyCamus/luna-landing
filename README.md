@@ -1,54 +1,40 @@
-# Astro Starter Kit: Basics
+# Luna Landing
+
+Luna Landing is an innovative and highly customizable landing page that allows you to create and modify your website easily and quickly through a JSON file. Harnessing the power of Astro, a modern and efficient web development tool, Luna Landing provides you with an unparalleled development experience, enabling you to focus on your site's design and content without worrying about the complexity of code.
+
+## Key Features
+
+- Extreme Customization: With Luna Landing, you can customize every aspect of your website, from design to content, using a simple JSON file. Easily change colors, fonts, images, and text without the need for manual code editing.
+
+- Efficiency and Speed: Thanks to Astro, Luna Landing delivers fast load times and exceptional performance, ensuring a smooth and uninterrupted user experience.
+
+- Total Adaptability: With support for mobile devices and various screen resolutions, Luna Landing ensures your website looks and functions flawlessly on any device, from smartphones to desktop computers.
+
+- Scalability and Simplified Maintenance: As your project grows, Luna Landing enables you to scale your website efficiently and seamlessly. Content management via a JSON file makes updating and ongoing maintenance of your website easy.
+
+## Get Started
+
+Start building your dream website with Luna Landing today! Download our template and discover the freedom and flexibility it offers to create a unique and captivating website.
+
+### Prerequisites
 
 ```sh
-npm create astro@latest -- --template basics
+npm install -g pnpm
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+### Install dependencies
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+```sh
+pnpm i
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+### Run the project
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+```sh
+pnpm dev
+```
 
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 🛠️ Stack
+- Astro - The web framework for content-driven websites.
+- Typescript - JavaScript with syntax for types.
+- Tailwind CSS - A utility-first CSS framework for rapidly building custom designs.
