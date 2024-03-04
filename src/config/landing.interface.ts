@@ -1,10 +1,16 @@
 export interface LandingPageData {
   title: string;
+  headerData: HeaderData;
   heroData: HeroData;
   servicesData: ServicesData;
   adventajesData: AdventajesData;
   brandsData: BrandsData;
   footerData: FooterData;
+}
+
+export interface HeaderData {
+  logo: string;
+  links: Link[];
 }
 
 export interface HeroData {

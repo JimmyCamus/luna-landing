@@ -1,5 +1,15 @@
 {
   "title": "Luna Landing your perfect landing page",
+  "headerData": {
+    "logo": "Luna Landing",
+    "links": [
+      { "label": "About", "href": "#" },
+      { "label": "Services", "href": "#" },
+      { "label": "Prices", "href": "#" },
+      { "label": "FAQs", "href": "#" },
+      { "label": "Blog", "href": "#" }
+    ]
+  },
   "heroData": {
     "title": "Open Your Mind to the Universe: Welcome to",
     "subTitle": "Discover the Beauty of the Cosmos: Explore the Infinite Wonders of Space with Us",

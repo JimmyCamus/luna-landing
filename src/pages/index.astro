@@ -6,11 +6,13 @@ import Services from "@/components/Services.astro";
 import Layout from "@/layouts/Layout.astro";
 import { getLandingData } from "@/services/data.service";
 import Brands from "../components/Brands.astro";
+import Header from "../components/Header.astro";
 
 const data = await getLandingData();
 ---
 
 <Layout title={data.title}>
+  <Header data={data.headerData} />
   <main class="flex flex-col justify-center items-center">
     <div class="w-3/4">
       <Hero data={data.heroData} />
