@@ -1,5 +1,6 @@
 ---
 import Icon from "@/components/Icon.astro";
+import IconWrapper from "@/components/IconWrapper.astro";
 import type {
   Icon as IconType,
   ServicesData,
@@ -21,7 +22,9 @@ const { data } = Astro.props;
       data.services.map((service) => (
         <article class="flex gap-x-6 md:gap-x-12 md:w-[550px]">
           <div>
-            <Icon icon={service.icon as IconType} />
+            <IconWrapper>
+              <Icon icon={service.icon as IconType} />
+            </IconWrapper>
           </div>
           <section>
             <h3 class="text-xl font-medium md:text-4xl mb-3">

@@ -1,5 +1,6 @@
 ---
 import Icon from "@/components/Icon.astro";
+import IconWrapper from "@/components/IconWrapper.astro";
 import { ASSET_PREFIX } from "@/config/constants";
 import type { Adventaje } from "@/config/landing.interface";
 
@@ -24,7 +25,9 @@ const { data, reversed } = Astro.props;
       {
         data.checks.map((check) => (
           <li class="flex flex-row items-center gap-x-4 md:text-2xl">
-            <Icon icon="CheckIcon" />
+            <IconWrapper>
+              <Icon icon="CheckIcon" />
+            </IconWrapper>
             {check}
           </li>
         ))
