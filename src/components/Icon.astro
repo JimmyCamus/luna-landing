@@ -18,9 +18,10 @@ import VueIcon from "../icons/techs/VueIcon.astro";
 
 interface Props {
   icon: Icon;
+  class?: string;
 }
 
-const { icon } = Astro.props;
+const { icon, class: className } = Astro.props;
 
 const icons = [
   ConfigIcon,
@@ -49,4 +50,4 @@ icons.map((item) => {
 const Figure = figures[icon];
 ---
 
-{Figure ? <Figure /> : <p>Icon not found</p>}
+{Figure ? <Figure class:list={[className]} /> : <p>Icon not found</p>}
