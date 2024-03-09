@@ -24,14 +24,14 @@ const { data } = Astro.props;
             <p class="text-xl text-center opacity-90">{tier.description}</p>
           </header>
           <section class="flex justify-center">
-            <p class="text-6xl font-semibold">
+            <h4 class="text-6xl font-semibold">
               {tier.price.amount}
               {tier.price.period && (
                 <span class="font-normal text-xl opacity-85">
                   {tier.price.period}
                 </span>
               )}
-            </p>
+            </h4>
           </section>
           <section class="flex justify-start">
             <ul class="flex flex-col gap-y-4 text-lg">
