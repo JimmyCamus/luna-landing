@@ -89,6 +89,58 @@
       }
     ]
   },
+  "pricingData": {
+    "title": "Our Pricing",
+    "tiers": [
+      {
+        "title": "Starter",
+        "description": "Best option for personal use & for your next project.",
+        "price": {
+          "amount": "Free"
+        },
+        "features": [
+          "feature 1",
+          "feature 2",
+          "feature 3",
+          "feature 4",
+          "feature 5"
+        ],
+        "cta": "Get started"
+      },
+      {
+        "title": "Professional",
+        "description": "Relevant for multiple users, extended & premium support.",
+        "price": {
+          "amount": "$29",
+          "period": "/month"
+        },
+        "features": [
+          "feature 1",
+          "feature 2",
+          "feature 3",
+          "feature 4",
+          "feature 5"
+        ],
+        "cta": "Get started"
+      },
+      {
+        "title": "Enterprise",
+        "description": "Best for large scale uses and extended redistribution rights.",
+        "price": {
+          "amount": "$59",
+          "period": "/month"
+        },
+        "features": [
+          "feature 1",
+          "feature 2",
+          "feature 3",
+          "feature 4",
+          "feature 5"
+        ],
+        "cta": "Get started"
+      }
+    ]
+  },
   "footerData": {
     "logo": "Luna Landing",
     "description": "Discover the Beauty of the Cosmos: Explore the Infinite Wonders of Space with Us",
