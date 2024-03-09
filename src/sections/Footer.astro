@@ -1,4 +1,5 @@
 ---
+import Action from "@/components/Action.astro";
 import Icon from "@/components/Icon.astro";
 import type { FooterData, Icon as IconType } from "@/config/landing.interface";
 
@@ -13,7 +14,9 @@ const { data } = Astro.props;
   class="flex flex-col justify-center text-center gap-y-8 pt-8 bg-black text-white w-full"
 >
   <section>
-    <a class="text-xl md:text-2xl" href="/">{data.logo}</a>
+    <Action as="a" type="text" class="text-xl md:text-2xl" href="/">
+      {data.logo}
+    </Action>
   </section>
   <section>
     <p class="md:text-lg">
@@ -25,22 +28,18 @@ const { data } = Astro.props;
   >
     {
       data.links.map((link) => (
-        <a class="hover:opacity-50 hover:scale-105" href={link.href}>
+        <Action as="a" type="text" href={link.href}>
           {link.label}
-        </a>
+        </Action>
       ))
     }
   </section>
   <section class="mb-5 flex flex-row flex-wrap justify-center gap-x-3">
     {
       data.socials.map((social) => (
-        <a
-          href={social.href}
-          class="text-white hover:opacity-50 hover:scale-105"
-          title={social.icon}
-        >
+        <Action as="a" type="icon" href={social.href} title={social.icon}>
           <Icon icon={social.icon as IconType} />
-        </a>
+        </Action>
       ))
     }
   </section>

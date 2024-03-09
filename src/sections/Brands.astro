@@ -1,4 +1,5 @@
 ---
+import Action from "@/components/Action.astro";
 import Icon from "@/components/Icon.astro";
 import type { BrandsData, Icon as IconType } from "@/config/landing.interface";
 
@@ -26,9 +27,9 @@ const { data } = Astro.props;
     {
       data.brands.map((brand) => (
         <div class="md:grayscale hover:grayscale-0 hover:scale-110 transition">
-          <a href={brand.href} title={brand.icon} target="_blank">
+          <Action as="a" href={brand.href} title={brand.icon} target="_blank">
             <Icon icon={brand.icon as IconType} />
-          </a>
+          </Action>
         </div>
       ))
     }

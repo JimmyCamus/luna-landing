@@ -1,5 +1,6 @@
 ---
-import type { HeaderData } from "../config/landing.interface";
+import Action from "@/components/Action.astro";
+import type { HeaderData } from "@/config/landing.interface";
 
 interface Props {
   data: HeaderData;
@@ -14,13 +15,15 @@ const { data } = Astro.props;
 >
   <nav class="flex flex-row items-center w-3/4">
     <div class="text-nowrap">
-      <a class="text-xl" href="#">{data.logo}</a>
+      <Action as="a" class="text-xl" href="#">{data.logo}</Action>
     </div>
     <ul class="flex flex-row w-full justify-center gap-x-14">
       {
         data.links.map((item) => (
           <li class="text-lg hover:scale-110 hover:opacity-80">
-            <a href={item.href}>{item.label}</a>
+            <Action as="a" href={item.href}>
+              {item.label}
+            </Action>
           </li>
         ))
       }
@@ -31,8 +34,6 @@ const { data } = Astro.props;
 
 <script>
   window.addEventListener("scroll", function () {
-    if (window.scrollY > 25) return;
-
     const navbar = document.getElementById("navbar");
     if (!navbar) return;
 
