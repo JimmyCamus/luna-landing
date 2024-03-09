@@ -1,4 +1,6 @@
 ---
+import "@fontsource-variable/rubik";
+
 interface Props {
   title: string;
 }
@@ -29,8 +31,9 @@ const { title } = Astro.props;
 </html>
 
 <style is:global>
-  code {
+  body {
     font-family:
+      "Rubik Variable",
       Menlo,
       Monaco,
       Lucida Console,
