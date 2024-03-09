@@ -23,7 +23,13 @@ const { data } = Astro.props;
   <section
     class="flex flex-row flex-wrap justify-center gap-x-3 px-4 md:px-0 md:text-xl"
   >
-    {data.links.map((link) => <a href={link.href}>{link.label}</a>)}
+    {
+      data.links.map((link) => (
+        <a class="hover:opacity-50 hover:scale-105" href={link.href}>
+          {link.label}
+        </a>
+      ))
+    }
   </section>
   <section class="mb-5 flex flex-row flex-wrap justify-center gap-x-3">
     {

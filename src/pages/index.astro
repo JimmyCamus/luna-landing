@@ -1,12 +1,12 @@
 ---
-import Adventajes from "@/components/Adventajes.astro";
-import Footer from "@/components/Footer.astro";
-import Hero from "@/components/Hero.astro";
-import Services from "@/components/Services.astro";
 import Layout from "@/layouts/Layout.astro";
+import Adventajes from "@/sections/Adventajes.astro";
+import Brands from "@/sections/Brands.astro";
+import Footer from "@/sections/Footer.astro";
+import Header from "@/sections/Header.astro";
+import Hero from "@/sections/Hero.astro";
+import Services from "@/sections/Services.astro";
 import { getLandingData } from "@/services/data.service";
-import Brands from "../components/Brands.astro";
-import Header from "../components/Header.astro";
 
 const data = await getLandingData();
 ---
