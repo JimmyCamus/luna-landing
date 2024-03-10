@@ -1,5 +1,5 @@
 export interface LandingPageData {
-  title: string;
+  meta: Meta;
   headerData: HeaderData;
   heroData: HeroData;
   servicesData: ServicesData;
@@ -91,6 +91,27 @@ export interface Tier {
 export interface Price {
   amount: string;
   period?: string;
+}
+
+export interface Meta {
+  title: string;
+  description: string;
+  ldJson: LdJson;
+}
+
+export interface LdJson {
+  "@context": string;
+  "@type": string;
+  name: string;
+  description: string;
+  url: string;
+  logo: string;
+  contactPoint: {
+    "@type": string;
+    email: string;
+    contactType: string;
+  };
+  sameAs: string[];
 }
 
 export type Icon =

@@ -12,7 +12,7 @@ import { getLandingData } from "@/services/data.service";
 const data = await getLandingData();
 ---
 
-<Layout title={data.title}>
+<Layout meta={data.meta}>
   <Header data={data.headerData} />
   <main class="flex flex-col justify-center items-center">
     <div class="w-3/4">

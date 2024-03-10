@@ -1,5 +1,26 @@
 {
-  "title": "Luna Landing your perfect landing page",
+  "meta": {
+    "title": "Luna Landing your perfect landing page",
+    "description": "Landing page template",
+    "ldJson": {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "Luna Landing",
+      "description": "Fictitious company that seeks to elevate and simplify the lives of web developers.",
+      "url": "https://luna-landing-rust.vercel.app/",
+      "logo": "./public/favicon.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "luna-landing@luna.com",
+        "contactType": "Client Service"
+      },
+      "sameAs": [
+        "https://www.twitter.com/yourpage",
+        "https://www.instagram.com/yourpage",
+        "https://www.linkedin.com/company/yourpage"
+      ]
+    }
+  },
   "headerData": {
     "logo": "Luna Landing",
     "links": [
