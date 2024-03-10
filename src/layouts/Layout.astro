@@ -14,10 +14,10 @@ const ldJson = JSON.stringify(meta.ldJson);
 <!doctype html>
 <html
   class="scrollbar-thin scrollbar-thumb-black scrollbar-track-transparent scroll-smooth"
-  lang="en"
+  lang={meta.lang ?? "en"}
 >
   <head>
-    <meta charset="UTF-8" />
+    <meta charset={meta.charset ?? "UTF-8"} />
     <title>{meta.title}</title>
     <meta name="description" content={meta.description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

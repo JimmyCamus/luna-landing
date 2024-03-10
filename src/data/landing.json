@@ -2,6 +2,8 @@
   "meta": {
     "title": "Luna Landing your perfect landing page",
     "description": "Landing page template",
+    "lang": "en",
+    "charset": "UTF-8",
     "ldJson": {
       "@context": "http://schema.org",
       "@type": "Organization",
