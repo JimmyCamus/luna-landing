@@ -1,4 +1,5 @@
 ---
+import Background from "@/components/Background.astro";
 import type { Meta } from "@/config/landing.interface";
 import "@fontsource-variable/rubik";
 
@@ -26,10 +27,7 @@ const ldJson = JSON.stringify(meta.ldJson);
     <script type="application/ld+json" set:html={ldJson} />
   </head>
   <body class="bg-white">
-    <div
-      class="absolute top-0 z-[-2] h-screen w-full bg-white bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)]"
-    >
-    </div>
+    <Background />
     <slot />
   </body>
 </html>
