@@ -1,6 +1,7 @@
 ---
 import Icon from "@/components/Icon.astro";
 import IconWrapper from "@/components/IconWrapper.astro";
+import SectionTitle from "@/components/SectionTitle.astro";
 import type {
   Icon as IconType,
   ServicesData,
@@ -14,9 +15,9 @@ const { data } = Astro.props;
 ---
 
 <section id="services-section" class="flex flex-col mb-60 gap-y-28">
-  <h2 class="text-2xl text-center font-bold md:text-5xl">
+  <SectionTitle>
     {data.title}
-  </h2>
+  </SectionTitle>
   <div class="grid md:grid-cols-2 gap-y-10 justify-items-center">
     {
       data.services.map((service) => (

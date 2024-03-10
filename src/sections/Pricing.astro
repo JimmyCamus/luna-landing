@@ -2,6 +2,7 @@
 import Action from "@/components/Action.astro";
 import Card from "@/components/Card.astro";
 import Icon from "@/components/Icon.astro";
+import SectionTitle from "@/components/SectionTitle.astro";
 import type { PricingData } from "@/config/landing.interface";
 
 interface Props {
@@ -12,7 +13,9 @@ const { data } = Astro.props;
 ---
 
 <section class="mt-48">
-  <h2 class="text-5xl font-semibold text-center">{data.title}</h2>
+  <SectionTitle>
+    {data.title}
+  </SectionTitle>
   <div
     class="my-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-10 place-items-center"
   >

@@ -13,7 +13,7 @@ const { data } = Astro.props;
   id="navbar"
   class="w-full transition duration-300 justify-center fixed h-20 z-50 hidden md:flex"
 >
-  <nav class="flex flex-row items-center w-3/4">
+  <nav aria-label="Main Navigation" class="flex flex-row items-center w-3/4">
     <div class="text-nowrap">
       <Action as="a" class="text-xl" href="#">{data.logo}</Action>
     </div>
