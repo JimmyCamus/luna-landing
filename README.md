@@ -1,4 +1,6 @@
-![image](https://github.com/JimmyCamus/luna-landing/assets/86853554/8327fa08-1224-4fa7-9aa9-344dcb373f0d)
+![image](https://github.com/JimmyCamus/luna-landing/assets/86853554/7dc4c571-bb33-4e55-ae94-446b056539a0)
+
+
 
 
 # Luna Landing
